@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGINT OPS - מערכת ניהול ידיעות מודיעין</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome עבור אייקונים -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="header-left">
+                <span class="shield-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            </div>
+            <div class="header-center">
+                <h1>SIGINT OPS</h1>
+            </div>
+            <div class="header-right">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span>SECURE : ONLINE</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN DASHBOARD CARD -->
+        <main class="main-dashboard">
+            <div class="radar-container">
+                <!-- אנימציית סורק רדאר -->
+                <div class="radar">
+                    <div class="radar-scanner"></div>
+                    <div class="radar-blip blip-1"></div>
+                    <div class="radar-blip blip-2"></div>
+                    <div class="radar-blip blip-3"></div>
+                </div>
+            </div>
+            <div class="dashboard-stats">
+                <div class="stat-item">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">ACTIVE SIGNALS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">07</span>
+                    <span class="stat-label">PRIORITY ALERTS</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- ACTION BUTTONS ROW -->
+        <section class="action-buttons">
+            <button class="action-btn">
+                <i class="fa-solid fa-plus"></i> New Brief
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-code"></i> Decode
+            </button>
+            <button class="action-btn">
+                <i class="fa-solid fa-plane"></i> Request Drone
+            </button>
+        </section>
+
+        <!-- CARDS ROW -->
+        <section class="cards-row">
+            <!-- Card 1 -->
+            <div class="intel-card border-green">
+                <div class="card-header-top">
+                    <span class="badge-tag danger-tag">CRITICAL</span>
+                    <span class="card-status-text">In Progress</span>
+                </div>
+                <div class="card-title">Operation Nightfall</div>
+                <div class="card-progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <span class="card-val">65%</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="intel-card border-yellow">
+                <div class="card-header-top">
+                    <span class="badge-tag warning-tag">HIGH</span>
+                    <span class="card-status-text warning">Analyzing</span>
+                </div>
+                <div class="card-title">Signal Intercept Alpha</div>
+                <div class="card-progress">
+                    <div class="progress-bar warning-bar" style="width: 40%;"></div>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <span class="card-val">40%</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="intel-card border-green">
+                <div class="card-header-top">
+                    <span class="badge-tag medium-tag">MEDIUM</span>
+                    <span class="card-status-text">Pending</span>
+                </div>
+                <div class="card-title">Asset Recovery</div>
+                <div class="card-progress">
+                    <div class="progress-bar" style="width: 15%;"></div>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <span class="card-val">15%</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="intel-card border-yellow">
+                <div class="card-header-top">
+                    <span class="badge-tag warning-tag">HIGH</span>
+                    <span class="card-status-text">Active</span>
+                </div>
+                <div class="card-title">Cyber Defense Grid</div>
+                <div class="card-progress">
+                    <div class="progress-bar warning-bar" style="width: 80%;"></div>
+                </div>
+                <div class="card-footer">
+                    <span></span>
+                    <span class="card-val">80%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- THREAT DETECTED BANNER -->
+        <div class="threat-banner">
+            <div class="threat-dot"></div>
+            <span class="threat-text">THREAT DETECTED</span>
+        </div>
+
+        <!-- NAVIGATION FOOTER -->
+        <nav class="nav-footer">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>Feed</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Brief</span>
+            </a>
+        </nav>
+    </div>
+
+</body>
+</html>
