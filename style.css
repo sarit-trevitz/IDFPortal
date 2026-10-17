@@ -1,4 +1,3 @@
-/* איפוס ומשתנים גלובליים */
 * {
     margin: 0;
     padding: 0;
@@ -86,7 +85,6 @@ body {
     100% { transform: scale(0.9); opacity: 0.7; }
 }
 
-/* MAIN DASHBOARD (סורק + נתונים) */
 .main-dashboard {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -110,7 +108,6 @@ body {
     align-items: center;
 }
 
-/* אנימציית רדאר מעגלית מתקדמת */
 .radar {
     width: 200px;
     height: 200px;
@@ -186,7 +183,6 @@ body {
     display: block;
 }
 
-/* ACTION BUTTONS & CARDS (אנימציות משותפות) */
 .action-buttons {
     display: flex;
     gap: 0.8rem;
@@ -223,7 +219,6 @@ body {
     gap: 0.5rem;
 }
 
-/* הובר משותף לכרטיסים ולכפתורים: עולים מעט ונהיים ירוקים */
 .intel-card:hover,
 .action-btn:hover {
     transform: translateY(-3px);
@@ -239,7 +234,6 @@ body {
     background-color: rgba(0, 255, 102, 0.04);
 }
 
-/* מסגרות צבעוניות בצד שמאל של הכרטיס */
 .intel-card.border-green { border-left: 3px solid var(--accent-green); }
 .intel-card.border-yellow { border-left: 3px solid var(--accent-yellow); }
 
@@ -295,7 +289,6 @@ body {
     color: var(--text-muted);
 }
 
-/* THREAT BANNER */
 .threat-banner {
     background-color: rgba(217, 83, 79, 0.08);
     border: 1px solid var(--accent-red);
@@ -340,7 +333,6 @@ body {
     font-size: 0.85rem;
 }
 
-/* NAVIGATION FOOTER */
 .nav-footer {
     display: flex;
     justify-content: space-around;
@@ -367,9 +359,68 @@ body {
     font-size: 1rem;
 }
 
-/* כפתור פעיל (Active) או במעבר עכבר (Hover) - נהיה ירוק ועולה מעט כלפי מעלה */
 .nav-item.active,
 .nav-item:hover {
     color: var(--accent-green);
     transform: translateY(-3px);
 }
+
+
+/* STATUS BADGE */
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--accent-green);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    background: rgba(0, 255, 102, 0.03);
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.status-badge:hover {
+    background: rgba(0, 255, 102, 0.15);
+    border-color: var(--accent-green);
+    box-shadow: 0 0 12px rgba(0, 255, 102, 0.3);
+}
+
+
+
+
+.header-left {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.header-left .shield-icon {
+    color: var(--accent-green);
+    font-size: 1.2rem;
+    transition: filter 0.25s ease;
+}
+
+.header-left:hover {
+    background: rgba(0, 255, 102, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
+}
+
+.header-left:hover .shield-icon {
+    filter: drop-shadow(0 0 6px var(--accent-green));
+}
+
+
+
+.header-center h1 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: var(--accent-green); 
+    font-weight: 500;
+    transition: none;
+}
+
