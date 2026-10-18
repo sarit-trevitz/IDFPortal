@@ -316,9 +316,11 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 8px var(--accent-red);
     position: absolute;
-    right: 18px;
+    left: 18px;
+    right: auto;
     animation: pulseRed 1s infinite ease-in-out;
 }
+
 
 @keyframes pulseRed {
     0% { transform: scale(0.9); opacity: 0.6; }
@@ -414,8 +416,6 @@ body {
     filter: drop-shadow(0 0 6px var(--accent-green));
 }
 
-
-
 .header-center h1 {
     font-size: 1rem;
     letter-spacing: 3px;
@@ -423,4 +423,3 @@ body {
     font-weight: 500;
     transition: none;
 }
-
