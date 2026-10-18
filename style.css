@@ -219,19 +219,17 @@ body {
     gap: 0.5rem;
 }
 
-.intel-card:hover,
 .action-btn:hover {
     transform: translateY(-3px);
     border-color: var(--accent-green);
+    color: var(--accent-green);
+    background-color: rgba(0, 255, 102, 0.04);
 }
 
 .intel-card:hover {
+    transform: translateY(-3px) rotate(1deg); 
+    border-color: var(--accent-green);
     background-color: rgba(0, 255, 102, 0.03);
-}
-
-.action-btn:hover {
-    color: var(--accent-green);
-    background-color: rgba(0, 255, 102, 0.04);
 }
 
 .intel-card.border-green { border-left: 3px solid var(--accent-green); }
